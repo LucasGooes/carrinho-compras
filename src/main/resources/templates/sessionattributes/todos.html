@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<th:block th:if="${produtos != null and !produtos.empty}" th:each="produto : ${produtos}">
+	<div>
+		<p th:text="${produto.preco}"></p>
+		<p th:text="${produto.descricao}"></p>
+	</div>
+</th:block>
+</body>
+</html>
